@@ -177,7 +177,7 @@
         layer_3 {
             bindings = <
 &trans  &trans  &with   &trans   &rw     &trans    &trans  &trans   &rintro  &trans  &Patrick     &trans
-&trans  &trans  &simp   &trans   &trans  &trans    &trans  &trans   &trans   &trans  &lib_search  &trans
+&trans  &trans  &simp   &trans   &trans  &trans    &trans  &trans   &trans  &lib_search  &trans  &trans
 &trans  &trans  &trans  &rcases  &trans  &trans    &trans  &Massot  &trans   &trans  &trans       &trans
                         &trans   &trans  &trans    &trans  &trans   &trans
             >;
