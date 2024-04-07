@@ -65,7 +65,7 @@
         gff: gff {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_SHIFT &kp N9 &kp SPACE &kt LSHFT>;
+            bindings = <&kt LEFT_SHIFT &kp N0 &kp SPACE &kt LSHFT>;
             label = "GFF";
         };
 
