@@ -18,8 +18,8 @@
 / {
     combos {
         compatible = "zmk,combos";
-        require-prior-idle-ms = 100;
-	timeout-ms = 65;
+        require-prior-idle-ms = <100>;
+	timeout-ms = <65>;
 
         ENTER_COMBO {
             bindings = <&kp ENTER>;
