@@ -19,7 +19,7 @@
     combos {
         compatible = "zmk,combos";
         require-prior-idle-ms = <100>;
-	timeout-ms = <65>;
+        timeout-ms = <65>;
 
         ENTER_COMBO {
             bindings = <&kp ENTER>;
@@ -126,6 +126,13 @@
             bindings = <&kp R &kp W &kp SPACE &kp LBKT &kp RIGHT_BRACKET &kp LEFT>;
             label = "RW";
         };
+
+        upsay: upsay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp U &kp N &kp I &kp V &kp E &kp R &kp S &kp I &kp T &kp E &kp MINUS &kp P &kp A &kp R &kp I &kp S &kp MINUS &kp S &kp A &kp C &kp L &kp A &kp Y &kp DOT &kp F &kp R>;
+            label = "UPSAY";
+        };
     };
 
     keymap {
@@ -154,10 +161,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &kp N2        &kp LC(BACKSPACE)  &kp DELETE  &kp BACKSPACE    &kp HOME      &kp PAGE_DOWN  &kp PG_UP     &kp END       &trans        &trans
-&trans  &kp LSHFT     &kp LGUI      &kp LALT           &kp LCTRL   &trans           &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT     &trans        &trans
-&trans  &trans  &trans   &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans             &trans      &trans           &sl 4        &sl 3          &trans
+&trans  &kp N1     &kp N2    &kp LC(BACKSPACE)  &kp DELETE  &kp BACKSPACE    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans  &trans
+&trans  &kp LSHFT  &kp LGUI  &kp LALT           &kp LCTRL   &trans           &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans     &trans    &trans             &trans      &trans           &trans    &trans         &trans     &trans     &trans  &trans
+                             &trans             &trans      &trans           &sl 4     &sl 3          &trans
             >;
         };
 
@@ -178,7 +185,7 @@
 
         macro_layer {
             bindings = <
-&trans  &trans  &with   &trans   &rw     &trans    &trans  &trans   &rintro  &trans       &Patrick  &trans
+&trans  &trans  &with   &trans   &rw     &trans    &trans  &upsay   &rintro  &trans       &Patrick  &trans
 &trans  &trans  &simp   &trans   &trans  &trans    &trans  &trans   &trans   &lib_search  &trans    &trans
 &trans  &trans  &trans  &rcases  &trans  &trans    &trans  &Massot  &trans   &trans       &trans    &trans
                         &trans   &trans  &trans    &trans  &trans   &trans
@@ -187,10 +194,10 @@
 
         bluetooth_layer {
             bindings = <
-&trans  &trans        &trans        &trans      &trans  &trans    &trans        &trans         &trans        &trans        &trans  &trans
-&trans  &trans        &trans        &trans      &trans  &trans    &trans        &trans         &trans        &trans        &trans  &trans
-&trans  &out OUT_USB  &out OUT_BLE  &bt BT_CLR  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-                         &trans   &trans  &trans    &trans  &trans  &trans
+&trans  &trans        &trans        &trans      &trans  &trans    &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &trans        &trans        &trans      &trans  &trans    &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &out OUT_USB  &out OUT_BLE  &bt BT_CLR  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+                                    &trans      &trans  &trans    &trans        &trans        &trans
             >;
         };
     };
