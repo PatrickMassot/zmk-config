@@ -13,7 +13,7 @@
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <150>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -26,10 +26,21 @@
             bindings = <&kp ENTER>;
             key-positions = <19 20>;
         };
+        
+	ENTER_COMBO2 {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>;
+        };
+
 
         ESC_COMBO {
             bindings = <&kp ESC>;
             key-positions = <7 8>;
+        };
+
+        ESC_COMBO2 {
+            bindings = <&kp ESC>;
+            key-positions = <8 9>;
         };
 
         TAB_COMBO {
@@ -37,9 +48,19 @@
             key-positions = <15 16>;
         };
 
+        TAB_COMBO2 {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
+        };
+
         MENU_COMBO {
             bindings = <&kp K_MENU>;
             key-positions = <3 4>;
+        };
+
+        MENU_COMBO2 {
+            bindings = <&kp K_MENU>;
+            key-positions = <2 3>;
         };
     };
 
@@ -162,7 +183,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &kp N2        &kp LC(BACKSPACE)  &kp DELETE  &kp BACKSPACE    &kp HOME      &kp PAGE_DOWN  &kp PG_UP     &kp END       &trans        &trans
+&trans  &kp N1        &kp N2        &kp LC(BACKSPACE)  &kp DELETE  &kp BACKSPACE &kp HOME      &kp PAGE_DOWN  &kp PG_UP     &kp END       &kp ENTER        &trans
 &trans  &kp LSHFT     &kp LGUI      &kp LALT           &kp LCTRL   &trans &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT     &msc SCRL_UP        &trans
 &trans  &trans  &trans   &mkp LCLK   &mkp MCLK &mkp RCLK    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
                                     &trans             &trans      &trans           &sl 4        &sl 3          &trans
