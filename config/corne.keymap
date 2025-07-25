@@ -55,12 +55,12 @@
             key-positions = <14 15>;
         };
 
-        MENU_COMBO {
+        COMPOSE_COMBO {
             bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <3 4>;
         };
 
-        MENU_COMBO2 {
+        COMPOSE_COMBO2 {
             bindings = <&kp  NON_US_BACKSLASH>;
             key-positions = <2 3>;
         };
