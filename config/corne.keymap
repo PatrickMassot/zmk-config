@@ -32,38 +32,6 @@
             key-positions = <20 21>;
         };
 
-
-        ESC_COMBO {
-            bindings = <&kp ESC>;
-            key-positions = <7 8>;
-            require-prior-idle-ms = <200>;
-        };
-
-        ESC_COMBO2 {
-            bindings = <&kp ESC>;
-            key-positions = <8 9>;
-            require-prior-idle-ms = <200>;
-        };
-
-        TAB_COMBO {
-            bindings = <&kp TAB>;
-            key-positions = <15 16>;
-        };
-
-        TAB_COMBO2 {
-            bindings = <&kp TAB>;
-            key-positions = <14 15>;
-        };
-
-        COMPOSE_COMBO {
-            bindings = <&kp NON_US_BACKSLASH>;
-            key-positions = <3 4>;
-        };
-
-        COMPOSE_COMBO2 {
-            bindings = <&kp  NON_US_BACKSLASH>;
-            key-positions = <2 3>;
-        };
     };
 
     macros {
