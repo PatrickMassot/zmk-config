@@ -129,7 +129,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp NON_US_BACKSLASH  &kp AMPS> ;
-            label = "RW";
+            label = "COMPOSE_MATHCAL";
         };
     };
 
